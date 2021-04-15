@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css"/>
+        <title>Live Weather by DaSquidz</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+      <header>
+        <h1>Live Weather</h1>
+        <div class="form-cont">
+          <form onsubmit="return false">
+            <input type="search" placeholder="Enter city name" required minlength="2">
+            <button type="submit">&#x1F50D</button>
+          </form>
+        </div>
+      </header>
+      <main class="weather-cont">
+        <div class="weather-city">--, --</div>
+        <div class="weather-type">--</div>
+        <div class="weather-temp">--°C</div>
+        <div class="weather-humidity">Humidity: --%</div>
+        <div class="weather-wind">Wind speed: -- km/h</div>
+      </main>
+    </body>
+</html>
