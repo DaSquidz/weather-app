@@ -1,0 +1,72 @@
+body, input, button {
+  box-sizing: border-box;
+  font-size: 22px;
+  background-color: #002b59;
+  color: white;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 700px) {
+  body, input, button {
+    font-size: 14px;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+input[type=search] {
+  padding: 10px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  background-color: white;
+  color: #444;
+}
+button[type=submit] {
+  padding: 10px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #005f8c; 
+}
+main {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "city city"
+    "weather weather"
+    "temp hum"
+    "temp wind";
+}
+.weather-city {
+  grid-area: city;
+  font-size: 1.5em;
+}
+.weather-type {
+  grid-area: weather;
+}
+.weather-temp {
+  grid-area: temp;
+  padding: 2px;
+  margin: 5px;
+  font-size: 3.2em;
+  border-right: 1px solid white;
+  justify-self: center;
+  align-self: center;
+}
+.weather-humidity {
+  grid-area: hum;
+}
+.weather-wind {
+  grid-area: wind;
+}
